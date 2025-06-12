@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crop Recommendation | FarmAssist</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/components/crop-recommender.css') }}">
+</head>
+<body>
+
+    {% include 'partials/header.html' %}
+
+    <section class="crop-recommend-section">
+        <div class="container">
+            <h2 class="section-title">Crop Recommendation</h2>
+            <p class="section-subtitle">Enter soil and climate values to get the best crop suggestion</p>
+
+            <form action="{{ url_for('predict') }}" method="POST" class="recommend-form">
+                <div class="form-grid">
+                    <input type="number" name="N" placeholder="Nitrogen (N)" required>
+                    <input type="number" name="P" placeholder="Phosphorus (P)" required>
+                    <input type="number" name="K" placeholder="Potassium (K)" required>
+                    <input type="number" name="temperature" placeholder="Temperature (°C)" step="0.1" required>
+                    <input type="number" name="humidity" placeholder="Humidity (%)" step="0.1" required>
+                    <input type="number" name="ph" placeholder="pH level" step="0.01" required>
+                    <input type="number" name="rainfall" placeholder="Rainfall (mm)" step="0.1" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Get Recommendation</button>
+            </form>
+
+            {% if prediction %}
+            <div class="result-card">
+                <h3>🌾 Recommended Crop:</h3>
+                <p class="highlight">{{ prediction | title }}</p>
+            </div>
+            {% endif %}
+        </div>
+    </section>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>
+
+
+

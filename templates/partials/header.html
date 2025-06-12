@@ -1,0 +1,26 @@
+<header class="header">
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">
+                <!-- <img src="{{ url_for('static', filename='images/logo.svg') }}" alt="FarmAssist Logo"> -->
+                <span>FarmAssist</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="{{ url_for('home') }}" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="{{ url_for('disease_detection') }}" class="nav-link">Disease Detection</a></li>
+                <li class="nav-item"><a href="{{ url_for('crop_recommendation_form') }}" class="nav-link">Crop Recommender</a></li>
+                <li class="nav-item"><a href="{{ url_for('marketplace') }}" class="nav-link">Marketplace</a></li>
+                {% if session.get('user') %}
+                    <a href="{{ url_for('logout') }}">Logout</a>
+                {% else %}
+                    <a href="{{ url_for('login') }}">Login</a>
+                {% endif %}
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </div>
+</header>

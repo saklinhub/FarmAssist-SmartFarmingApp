@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmAssist - Smart Farming Solutions</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+</head>
+<body>
+    {% include 'partials/header.html' %}
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Smart Farming Solutions for Modern Agriculture</h1>
+                <p>Detect plant diseases, get personalized crop recommendations, and access farming essentials - all in one place.</p>
+                <div class="hero-buttons">
+                    <a href="{{ url_for('disease_detection') }}" class="btn btn-primary">Detect Disease</a>
+                    <a href="{{ url_for('crop_recommendation_form') }}">Get Crop Recommendations</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Our Features</h2>
+                <p>Comprehensive tools designed for modern farmers</p>
+            </div>
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Plant Disease Detection</h3>
+                    <p>Upload a photo of your plant and get instant disease identification with treatment recommendations.</p>
+                    <a href="{{ url_for('disease_detection') }}" class="feature-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Smart Crop Recommendation</h3>
+                    <p>Get personalized crop suggestions based on soil conditions, local weather, and IoT sensor data.</p>
+                    <a href="{{ url_for('crop_recommendation_form') }}" class="feature-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>Farmer's Marketplace</h3>
+                    <p>Browse and purchase high-quality seeds, fertilizers, tools, and other farming essentials.</p>
+                    <a href="pages/marketplace.html" class="feature-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-heading">
+                <h2>How It Works</h2>
+                <p>Simple steps to improve your farming experience</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Upload Plant Images</h3>
+                        <p>Take a clear photo of the affected plant part and upload it to our system.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Connect IoT Devices</h3>
+                        <p>Link your soil sensors and weather stations to get real-time environmental data.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Receive Recommendations</h3>
+                        <p>Get instant disease identification and crop suggestions tailored to your farm.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Access Marketplace</h3>
+                        <p>Purchase recommended products to improve your farm's productivity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Farmer Success Stories</h2>
+                <p>See how FarmAssist has helped farmers like you</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The disease detection feature saved my tomato farm. I identified early blid before it spread and was able to treat it immediately."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="assets/images/placeholders/farmer1.jpg" alt="Farmer">
+                        <div>
+                            <h4>Rajesh Kumar</h4>
+                            <p>Vegetable Farmer, Bihar</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The crop recommendation system suggested growing mustard instead of wheat based on my soil conditions, and my yield increased by 30%!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="assets/images/placeholders/farmer2.jpg" alt="Farmer">
+                        <div>
+                            <h4>Sunita Devi</h4>
+                            <p>Small-scale Farmer, Haryana</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Farming Approach?</h2>
+                <p>Join thousands of farmers who are using technology to improve their yields and reduce crop losses.</p>
+                <a href="#" class="btn btn-primary btn-large">Get Started Now</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+:root {
+    /* Color Palette */
+    --primary-color: #3D9970;      /* Green */
+    --primary-dark: #2D7C5B;       /* Darker green */
+    --primary-light: #E8F5E9;      /* Light green background */
+    --secondary-color: #FF8C00;    /* Orange */
+    --secondary-dark: #E67300;     /* Darker orange */
+    --secondary-light: #FFF3E0;    /* Light orange background */
+    --accent-color: #1976D2;       /* Blue */
+    
+    /* Neutral Colors */
+    --bg-color: #FFFFFF;           /* Background color */
+    --light-bg: #F9F9F9;           /* Light background for sections */
+    --text-color: #333333;         /* Main text color */
+    --text-secondary: #6C757D;     /* Secondary text color */
+    --heading-color: #212529;      /* Heading color */
+    --border-color: #E0E0E0;       /* Border color */
+    
+    /* Success, Warning, Error Colors */
+    --success-color: #28A745;      /* Success messages */
+    --warning-color: #FFC107;      /* Warning messages */
+    --error-color: #DC3545;        /* Error messages */
+    
+    /* Spacing */
+    --spacing-xs: 0.5rem;          /* 8px */
+    --spacing-sm: 1rem;            /* 16px */
+    --spacing-md: 1.5rem;          /* 24px */
+    --spacing-lg: 2rem;            /* 32px */
+    --spacing-xl: 3rem;            /* 48px */
+    
+    /* Border Radius */
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
+    --border-radius-xl: 24px;
+    
+    /* Box Shadow */
+    --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
+    
+    /* Transition */
+    --transition-speed: 0.3s;
+    
+    /* Font Family */
+    --font-primary: 'Poppins', sans-serif;
+    --font-secondary: 'Open Sans', sans-serif;
+    
+    /* Font Sizes */
+    --font-size-xs: 0.75rem;       /* 12px */
+    --font-size-sm: 0.875rem;      /* 14px */
+    --font-size-md: 1rem;          /* 16px - Base font size */
+    --font-size-lg: 1.125rem;      /* 18px */
+    --font-size-xl: 1.25rem;       /* 20px */
+    --font-size-2xl: 1.5rem;       /* 24px */
+    --font-size-3xl: 1.875rem;     /* 30px */
+    --font-size-4xl: 2.25rem;      /* 36px */
+    --font-size-5xl: 3rem;         /* 48px */
+    
+    /* Font Weights */
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    
+    /* Z-index */
+    --z-index-dropdown: 1000;
+    --z-index-sticky: 1020;
+    --z-index-fixed: 1030;
+    --z-index-modal-backdrop: 1040;
+    --z-index-modal: 1050;
+    --z-index-popover: 1060;
+    --z-index-tooltip: 1070;
+}

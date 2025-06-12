@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Disease Detection | FarmAssist</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/components/disease-detector.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/components/marketplace.css') }}">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script> -->
+</head>
+<body>
+
+    {% include 'partials/header.html' %}
+
+    <section class="disease-detect-section">
+        <div class="container">
+            <h2 class="section-title">Plant Disease Detection</h2>
+            <p class="section-subtitle">Upload a plant leaf image and we’ll identify the disease</p>
+
+            <form action="{{ url_for('disease_detection') }}" method="POST" enctype="multipart/form-data" class="upload-form">
+                <input type="file" name="file" accept="image/*" required>
+                <button type="submit" class="btn btn-primary">Detect Disease</button>
+            </form>
+
+            {% if prediction %}
+            <div class="result-card">
+                <h3>🌿 Prediction:</h3>
+                <p class="highlight">{{ prediction }}</p>
+                <p class="{{ 'low-confidence' if confidence < 60 else 'high-confidence' }}">
+                    Confidence: 
+                        {% if confidence < 40 %}
+                        Low
+                        {% elif confidence < 70 %}
+                        Moderate
+                        {% else %}
+                        High
+                        {% endif %}
+                </p>
+
+
+                <img src="{{ image_path }}" alt="Uploaded Leaf" class="result-image">
+            </div>
+            {% endif %}
+        </div>
+    </section>
+
+
+
+   {% if cure %}
+<div class="cure-section" style="margin-top: 20px;">
+  <h3>🩺 Suggested Cure</h3>
+  <p><strong>Name:</strong>{{prediction}}</p>
+  <p><strong>Type:</strong> {{ disease_type }}</p>
+  <p><strong>Cure:</strong>{{ cure }}</p>
+</div>
+{% endif %}
+ 
+
+
+    {% if recommendations %}
+<hr>
+<h3>🛒 Suggested Products</h3>
+<div class="product-grid">
+  {% for item in recommendations %}
+  <div class="product-card">
+    <img src="{{ url_for('static', filename='images/marketplace/' + item.image) }}" alt="{{ item.name }}">
+    <h4>{{ item.name }}</h4>
+    <p class="desc">{{ item.desc }}</p>
+    <p class="price">₹{{ item.price }}</p>
+    <button class="btn-buy">Add to Cart</button>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+
+
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
+
+
