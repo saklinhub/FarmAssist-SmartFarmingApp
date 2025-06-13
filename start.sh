@@ -15,4 +15,4 @@ curl -L -o crop_disease_detection.h5 "https://drive.google.com/uc?export=downloa
 echo "✅ Models downloaded!"
 
 echo "🚀 Starting the app..."
-gunicorn app:app  # Replace 'app:app' with your actual app entry point if different
+gunicorn app:app --bind=0.0.0.0:$PORT # Replace 'app:app' with your actual app entry point if different
