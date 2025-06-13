@@ -5,10 +5,10 @@ venv/
 .vscode/
 __pycache__/
 #.env/
-*.pyc
-*.pyo
-*.pyd
+# *.pyc
+# *.pyo
+# *.pyd
 #*.db
-*.sqlite3
-*.log
+# *.sqlite3
+# *.log
 #.env
