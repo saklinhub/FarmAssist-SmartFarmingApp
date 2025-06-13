@@ -7,10 +7,10 @@ PKL_FILE_ID=your_pkl_file_id_here
 H5_FILE_ID=your_h5_file_id_here
 
 # Download model.pkl
-curl -L -o model.pkl "https://drive.google.com/uc?export=download&id=1Ab3XaEW7NL50Jugt4fPx1dN1eZHrYEQK"
+curl -L -o crop_model.pkl "https://drive.google.com/uc?export=download&id=1Ab3XaEW7NL50Jugt4fPx1dN1eZHrYEQK"
 
 # Download model.h5
-curl -L -o model.h5 "https://drive.google.com/uc?export=download&id=17-Arqf2U0jhQbDjDroQ0GT2EYkUFBpGN"
+curl -L -o crop_disease_detection.h5 "https://drive.google.com/uc?export=download&id=17-Arqf2U0jhQbDjDroQ0GT2EYkUFBpGN"
 
 echo "✅ Models downloaded!"
 
