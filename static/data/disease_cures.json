@@ -1,0 +1,192 @@
+{
+  "Apple___Black_rot": {
+    "name": "Apple - Black Rot",
+    "type": "Fungal",
+    "cure": "Apply appropriate fungicide or pesticide based on diagnosis. Remove affected leaves. Use resistant varieties if available."
+  },
+  "Apple___Cedar_apple_rust": {
+    "name": "Apple - Cedar Apple Rust",
+    "type": "Unknown",
+    "cure": "Apply appropriate fungicide or pesticide based on diagnosis. Remove affected leaves. Use resistant varieties if available."
+  },
+  "Apple___healthy": {
+    "name": "Apple - Healthy",
+    "type": "None",
+    "cure": "The plant is healthy. No treatment is required."
+  },
+  "Apple___scab": {
+    "name": "Apple - Scab",
+    "type": "Unknown",
+    "cure": "Apply appropriate fungicide or pesticide based on diagnosis. Remove affected leaves. Use resistant varieties if available."
+  },
+  "Blueberry___healthy": {
+    "name": "Blueberry - Healthy",
+    "type": "None",
+    "cure": "The plant is healthy. No treatment is required."
+  },
+  "Cherry_(including_sour)___Powdery_mildew": {
+    "name": "Cherry (Including Sour) - Powdery Mildew",
+    "type": "Fungal",
+    "cure": "Apply appropriate fungicide or pesticide based on diagnosis. Remove affected leaves. Use resistant varieties if available."
+  },
+  "Cherry_(including_sour)___healthy": {
+    "name": "Cherry (Including Sour) - Healthy",
+    "type": "None",
+    "cure": "The plant is healthy. No treatment is required."
+  },
+  "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+    "name": "Corn (Maize) - Cercospora Leaf Spot Gray Leaf Spot",
+    "type": "Unknown",
+    "cure": "Apply appropriate fungicide or pesticide based on diagnosis. Remove affected leaves. Use resistant varieties if available."
+  },
+  "Corn_(maize)___Common_rust_": {
+    "name": "Corn (Maize) - Common Rust ",
+    "type": "Unknown",
+    "cure": "Apply appropriate fungicide or pesticide based on diagnosis. Remove affected leaves. Use resistant varieties if available."
+  },
+  "Corn_(maize)___Northern_Leaf_Blight": {
+    "name": "Corn (Maize) - Northern Leaf Blight",
+    "type": "Fungal",
+    "cure": "Apply appropriate fungicide or pesticide based on diagnosis. Remove affected leaves. Use resistant varieties if available."
+  },
+  "Corn_(maize)___healthy": {
+    "name": "Corn (Maize) - Healthy",
+    "type": "None",
+    "cure": "The plant is healthy. No treatment is required."
+  },
+  "Grape___Black_rot": {
+    "name": "Grape - Black Rot",
+    "type": "Fungal",
+    "cure": "Apply appropriate fungicide or pesticide based on diagnosis. Remove affected leaves. Use resistant varieties if available."
+  },
+  "Grape___Esca_(Black_Measles)": {
+    "name": "Grape - Esca (Black Measles)",
+    "type": "Unknown",
+    "cure": "Apply appropriate fungicide or pesticide based on diagnosis. Remove affected leaves. Use resistant varieties if available."
+  },
+  "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+    "name": "Grape - Leaf Blight (Isariopsis Leaf Spot)",
+    "type": "Fungal",
+    "cure": "Apply appropriate fungicide or pesticide based on diagnosis. Remove affected leaves. Use resistant varieties if available."
+  },
+  "Grape___healthy": {
+    "name": "Grape - Healthy",
+    "type": "None",
+    "cure": "The plant is healthy. No treatment is required."
+  },
+  "Orange___Haunglongbing_(Citrus_greening)": {
+    "name": "Orange - Haunglongbing (Citrus Greening)",
+    "type": "Unknown",
+    "cure": "Apply appropriate fungicide or pesticide based on diagnosis. Remove affected leaves. Use resistant varieties if available."
+  },
+  "Peach___Bacterial_spot": {
+    "name": "Peach - Bacterial Spot",
+    "type": "Bacterial",
+    "cure": "Apply appropriate fungicide or pesticide based on diagnosis. Remove affected leaves. Use resistant varieties if available."
+  },
+  "Peach___healthy": {
+    "name": "Peach - Healthy",
+    "type": "None",
+    "cure": "The plant is healthy. No treatment is required."
+  },
+  "Pepper,_bell___Bacterial_spot": {
+    "name": "Pepper, Bell - Bacterial Spot",
+    "type": "Bacterial",
+    "cure": "Apply appropriate fungicide or pesticide based on diagnosis. Remove affected leaves. Use resistant varieties if available."
+  },
+  "Pepper,_bell___healthy": {
+    "name": "Pepper, Bell - Healthy",
+    "type": "None",
+    "cure": "The plant is healthy. No treatment is required."
+  },
+  "Potato___Early_blight": {
+    "name": "Potato - Early Blight",
+    "type": "Fungal",
+    "cure": "Apply appropriate fungicide or pesticide based on diagnosis. Remove affected leaves. Use resistant varieties if available."
+  },
+  "Potato___Late_blight": {
+    "name": "Potato - Late Blight",
+    "type": "Fungal",
+    "cure": "Apply appropriate fungicide or pesticide based on diagnosis. Remove affected leaves. Use resistant varieties if available."
+  },
+  "Potato___healthy": {
+    "name": "Potato - Healthy",
+    "type": "None",
+    "cure": "The plant is healthy. No treatment is required."
+  },
+  "Raspberry___healthy": {
+    "name": "Raspberry - Healthy",
+    "type": "None",
+    "cure": "The plant is healthy. No treatment is required."
+  },
+  "Soybean___healthy": {
+    "name": "Soybean - Healthy",
+    "type": "None",
+    "cure": "The plant is healthy. No treatment is required."
+  },
+  "Squash___Powdery_mildew": {
+    "name": "Squash - Powdery Mildew",
+    "type": "Fungal",
+    "cure": "Apply appropriate fungicide or pesticide based on diagnosis. Remove affected leaves. Use resistant varieties if available."
+  },
+  "Strawberry___Leaf_scorch": {
+    "name": "Strawberry - Leaf Scorch",
+    "type": "Unknown",
+    "cure": "Apply appropriate fungicide or pesticide based on diagnosis. Remove affected leaves. Use resistant varieties if available."
+  },
+  "Strawberry___healthy": {
+    "name": "Strawberry - Healthy",
+    "type": "None",
+    "cure": "The plant is healthy. No treatment is required."
+  },
+  "Tomato___Bacterial_spot": {
+    "name": "Tomato - Bacterial Spot",
+    "type": "Bacterial",
+    "cure": "Apply appropriate fungicide or pesticide based on diagnosis. Remove affected leaves. Use resistant varieties if available."
+  },
+  "Tomato___Early_blight": {
+    "name": "Tomato - Early Blight",
+    "type": "Fungal",
+    "cure": "Apply appropriate fungicide or pesticide based on diagnosis. Remove affected leaves. Use resistant varieties if available."
+  },
+  "Tomato___Late_blight": {
+    "name": "Tomato - Late Blight",
+    "type": "Fungal",
+    "cure": "Apply appropriate fungicide or pesticide based on diagnosis. Remove affected leaves. Use resistant varieties if available."
+  },
+  "Tomato___Leaf_Mold": {
+    "name": "Tomato - Leaf Mold",
+    "type": "Unknown",
+    "cure": "Apply appropriate fungicide or pesticide based on diagnosis. Remove affected leaves. Use resistant varieties if available."
+  },
+  "Tomato___Septoria_leaf_spot": {
+    "name": "Tomato - Septoria Leaf Spot",
+    "type": "Unknown",
+    "cure": "Apply appropriate fungicide or pesticide based on diagnosis. Remove affected leaves. Use resistant varieties if available."
+  },
+  "Tomato___Spider_mites Two-spotted_spider_mite": {
+    "name": "Tomato - Spider Mites Two-Spotted Spider Mite",
+    "type": "Unknown",
+    "cure": "Apply appropriate fungicide or pesticide based on diagnosis. Remove affected leaves. Use resistant varieties if available."
+  },
+  "Tomato___Target_Spot": {
+    "name": "Tomato - Target Spot",
+    "type": "Unknown",
+    "cure": "Apply appropriate fungicide or pesticide based on diagnosis. Remove affected leaves. Use resistant varieties if available."
+  },
+  "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+    "name": "Tomato - Tomato Yellow Leaf Curl Virus",
+    "type": "Viral",
+    "cure": "Apply appropriate fungicide or pesticide based on diagnosis. Remove affected leaves. Use resistant varieties if available."
+  },
+  "Tomato___Tomato_mosaic_virus": {
+    "name": "Tomato - Tomato Mosaic Virus",
+    "type": "Viral",
+    "cure": "Apply appropriate fungicide or pesticide based on diagnosis. Remove affected leaves. Use resistant varieties if available."
+  },
+  "Tomato___healthy": {
+    "name": "Tomato - Healthy",
+    "type": "None",
+    "cure": "The plant is healthy. No treatment is required."
+  }
+}
