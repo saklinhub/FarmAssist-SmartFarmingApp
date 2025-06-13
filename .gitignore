@@ -4,11 +4,11 @@ crop_model.pkl
 venv/
 .vscode/
 __pycache__/
-.env/
+#.env/
 *.pyc
 *.pyo
 *.pyd
 #*.db
 *.sqlite3
 *.log
-.env
+#.env
