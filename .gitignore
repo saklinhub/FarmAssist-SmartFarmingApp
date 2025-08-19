@@ -1,5 +1,5 @@
-Crop_disease_detection_model.h5
-crop_model.pkl
+# Crop_disease_detection_model.h5
+# crop_model.pkl
 instance/
 venv/
 .vscode/
