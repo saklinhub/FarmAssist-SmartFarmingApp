@@ -22,6 +22,11 @@ app.secret_key=os.getenv("SECRET_KEY")
 app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///users.db'
 db=SQLAlchemy(app)
 
+# Create the database and tables if they don't exist (for deployment purposes)
+with app.app_context():
+    db.create_all()
+
+
 class User(db.Model):
     id=db.Column(db.Integer,primary_key=True)
     username=db.Column(db.String(150),unique=True,nullable=False)
