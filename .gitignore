@@ -7,8 +7,7 @@ __pycache__/
 trained_model.h5
 .env/
 uploads/
-instance/
-*.db
+
 
 
 

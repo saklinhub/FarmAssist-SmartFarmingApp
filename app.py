@@ -23,8 +23,8 @@ app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///users.db'
 db=SQLAlchemy(app)
 
 # Create the database and tables if they don't exist (for deployment purposes)
-with app.app_context():
-    db.create_all()
+# with app.app_context():
+#     db.create_all()
 
 
 class User(db.Model):
