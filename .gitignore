@@ -1,14 +1,12 @@
-crop_disease_detection.h5
+Crop_disease_detection_model.h5
 crop_model.pkl
-#instance/
+instance/
 venv/
 .vscode/
 __pycache__/
-#.env/
-# *.pyc
-# *.pyo
-# *.pyd
-#*.db
-# *.sqlite3
-# *.log
-#.env
+trained_model.h5
+.env/
+uploads/
+
+
+

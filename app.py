@@ -40,10 +40,14 @@ def login_required(f):
 crop_model=pickle.load(open('crop_model.pkl', 'rb'))
 
 #Disease Detection Model
-disease_model=load_model('crop_disease_detection.h5')
+#disease_model=load_model('crop_disease_detection.h5')
+disease_model=load_model('Crop_disease_detection_model.h5')
 
-with open('static/data/class_labels.json') as f:
+# with open('static/data/class_labels.json') as f:
+#     class_labels=json.load(f)
+with open('static/data/class_indices_fresh.json') as f:
     class_labels=json.load(f)
+
 
 with open('static/data/disease_cures.json') as f:
     DISEASE_CURES=json.load(f)
@@ -156,14 +160,24 @@ def disease_detection():
                 file.save(image_path)
 
                 
-                img = image.load_img(image_path, target_size=(128, 128))
-                img_array = image.img_to_array(img)
-                img_array = img_array / 255.0
-                img_array = np.expand_dims(img_array, axis=0) 
+                # img = image.load_img(image_path, target_size=(128, 128))
+                img=image.load_img(image_path,target_size=(224,224))
+                img_array=image.img_to_array(img)
+                img_array=img_array/255.0
+                img_array=np.expand_dims(img_array,axis=0) 
+                
 
                 
                 result = disease_model.predict(img_array)
-                raw_class = class_labels[np.argmax(result[0])]
+
+
+                #raw_class = class_labels[np.argmax(result[0])]
+                index_to_class = {v: k for k, v in class_labels.items()}
+
+                predicted_index = int(np.argmax(result[0]))
+                raw_class = index_to_class[predicted_index]
+
+
                 predicted_class = raw_class.replace("___", " - ").replace("_", " ").title()
 
 
