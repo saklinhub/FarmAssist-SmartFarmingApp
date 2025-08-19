@@ -1,6 +1,6 @@
 # Crop_disease_detection_model.h5
 # crop_model.pkl
-instance/
+
 venv/
 .vscode/
 __pycache__/
