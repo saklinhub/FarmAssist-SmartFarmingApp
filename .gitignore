@@ -4,8 +4,11 @@
 venv/
 .vscode/
 __pycache__/
-trained_model.h5
 .env/
+
+
+..env/ 
+instance/
 
 
 
