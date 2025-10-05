@@ -38,7 +38,7 @@ To set up FarmAssist locally, follow these steps:
 - Python 3.8+
 - Flask
 - NumPy, Pandas, Scikit-learn (for crop recommendation)
-- TensorFlow or PyTorch (for disease detection)
+- TensorFlow (for disease detection)
 - Other dependencies listed in requirements.txt
 
 ## Usage
@@ -76,3 +76,4 @@ Contributions are welcome! To contribute:
 
 
    
+
